@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load static from staticfiles %}
+{% load static %}
 {% block title %}<title>Doctors</title>{% endblock %}
 {% block nav %}
 <div class="form-inline my-2 my-lg-0">
@@ -14,7 +14,7 @@
   </div>
 {% endblock %}
 {% block header %}
-<header class="masthead text-white text-center" style="background:url('{% static '/img/bg-2.jpg' %}')no-repeat center center fixed;background-size:cover;">
+<header class="masthead text-white text-center"img src =  "({% static 'C:\Users\INDIA\health\Django-Visitor-Management-System\assets\img\bg-2.jpg' %})" no-repeat center center fixed;background-size:cover;">
     <div class="text-center">
         <h1 class='text-monospace text-light' style="height: 4rem;">MEET OUR SPEACIALIST TEAM</h1>
     </div>
