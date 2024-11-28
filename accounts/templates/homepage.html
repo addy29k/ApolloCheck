@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load static from staticfiles %}
+{% load static %}
 {% block title %}<title>HealthPlus</title>{% endblock %}
 {% block nav %} 
 <div class="form-inline my-2 my-lg-0 ml-auto">
@@ -14,7 +14,7 @@
 {% endblock %}
 
 {% block header %}
-<header class="masthead text-white text-center " style="background:url('{% static '/img/bg-2.jpg' %}')no-repeat center center;background-size:cover;">
+<header class="masthead text-white text-center " style="background:url('{% static %}')no-repeat center center;background-size:cover;">
     <div class="overlay"></div>
     <div class="container">
     <div class="row">
