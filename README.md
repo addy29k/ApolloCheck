@@ -10,8 +10,7 @@ Being a web application **It also serves as an organisation's official website**
 #### Why i made it organisation specific?
 Well !, as it also acts as an organisation's official website, so i took an example organisation. Also, its always better to explain with examples : )
 
-## Visit deployed website
-- Deployed on pythonanywhere : http://healthplus.pythonanywhere.com/
+
 
 
 ## Features
@@ -24,42 +23,9 @@ Well !, as it also acts as an organisation's official website, so i took an exam
 - Emails and SMS notification to both visitor and Host.
 - Secure and Easy to **ADD, DELETE or EDIT a Host profile**.
 
-## Solution Workflow
-- Let a visitor wants to meet a host, he goes to office and checks for that Host on the Dashboard Screen installed for visitors. Dashboard shows information of all Hosts with their current status.
-- If the Host is **BUSY** it shows the current visitor details. And if the host is **FREE**, an 'Arrange Meeting' button is shown.
-- Visitor clicks on that arrange meeting button and a 'Meeting Form' is opened, visitor fills his/her details in that form and clicks on Check-In button.
-- As the Check-In button is clicked, an Email with all deatils of visitor and a Check-out button for that visitor is sent to Host. A SMS is also sent to Host about Visitor's details. Status of the Host is changed to **BUSY** on the dashboard. 
-- After the meeting is over, the visitor leaves the office and Host clicks on that 'Check-out' button given inside the mail. As soon as it is clicked, the Host's status is set as **FREE** again and Checkout time is recorded for that meeting. An Email with all the meeting details is sent to the visitor's Email Id.
-- Dashboard refreshes itself automatically after 20 seconds and Host is again seen as **FREE** on the dasboard.
 
-## Local Machine development setup
-- Clone the repository on your machine 
-    ```
-    git clone https://github.com/shubhamkumar27/Summergeeks-Visitor-Management-System.git
-    ```
-    
-- Install all dependencies by executing the following command:
-    ```
-    pip install -r requirements.txt
-    ```
-    
-- You need to make some changes to the settings.py file inside visitor_management folder, go to bottom of the file
-    ```
-    UPDATE : EMAIL_HOST_USER = "your email id" 
-    UPDATE : EMAIL_HOST_PASSWORD = "your email id password"
-    ```
-    ( Make sure you <a href='https://myaccount.google.com/lesssecureapps'>enable less secure apps</a> in your google account, so that it sends email ! )
-   
-- Now you need to edit some lines in views.py file inside accounts folder
-  - INSIDE email function:
-    ```
-    UPDATE : sender = 'your email id'
-    ```
-  - GO to <a href='https://www.way2sms.com/'>way2sms</a>, create your account and genetrate your test apikey and secret key. Now go INSIDE sendsms function:
-    ```
-    UPDATE : 'apikey':'your api key',
-    UPDATE : 'secret':'your secret key',
-    UPDATE : 'senderid' : 'your way2sms account email id'
+
+count email id'
     ```
     
 - Now go inside the main folder which was cloned (manage.py file will be present there), now open a terminal in that directory and run follwing commands:
